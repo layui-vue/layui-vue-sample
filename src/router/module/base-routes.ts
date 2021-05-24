@@ -16,7 +16,7 @@ export default [
       {
         path: '/console',
         component: () => import('../../views/Console/index.vue'),
-        meta: { title: '分析页' },
+        meta: { title: '控制台' },
       }
     ]
   }
