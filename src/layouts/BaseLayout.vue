@@ -1,12 +1,6 @@
 <template>
   <ele-layout 
-    theme="black">
+    theme="black" multi-tab=true breadcrumb=true>
         <template #logo></template>
-        <template #header-left>
-          <ele-breadcrumb></ele-breadcrumb>
-        </template>
-        <template #header-bottom>
-          <ele-tabs></ele-tabs>
-        </template>
   </ele-layout>
 </template>
