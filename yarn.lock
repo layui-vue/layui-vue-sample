@@ -108,6 +108,11 @@
   resolved "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.0.0-beta.11.tgz"
   integrity sha512-vpw61AkW9U8c2upjJCljHq9eh1KkD4FJ7DYbRzIETpj9WAw2VESudJZosAk4M+7npBo1Zu1jNQY03HUMVO/czQ==
 
+"@vue/devtools-api@^6.0.0-beta.14":
+  version "6.0.0-beta.14"
+  resolved "https://registry.nlark.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.14.tgz?cache=0&sync_timestamp=1623239431123&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fdevtools-api%2Fdownload%2F%40vue%2Fdevtools-api-6.0.0-beta.14.tgz#6ed2d6f8d66a9256c9ad04bfff08309ba87b9723"
+  integrity sha1-btLW+NZqklbJrQS//wgwm6h7lyM=
+
 "@vue/reactivity@3.1.1":
   version "3.1.1"
   resolved "https://registry.npmjs.org/@vue/reactivity/-/reactivity-3.1.1.tgz"
@@ -249,19 +254,33 @@ duplexer2@~0.1.4:
   dependencies:
     readable-stream "^2.0.2"
 
-element-enhance@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/element-enhance/-/element-enhance-0.3.1.tgz"
-  integrity sha512-YuSdN5W5E63P36k8Xuwi9Xxde8ahpCi+gRuZmi95PTaPklzHpywj5uK6HSV03DdYtryQMoy3heyQ0dl+1ac/IQ==
+element-enhance@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.nlark.com/element-enhance/download/element-enhance-0.3.4.tgz#de1515a8c372b2e02c156a6df4e56d5716a7d29a"
+  integrity sha1-3hUVqMNysuAsFWpt9OVtVxan0po=
   dependencies:
-    element-plus "^1.0.2-beta.47"
-    vue "^3.0.11"
-    vue-router "^4.0.6"
+    element-plus "^1.0.2-beta.48"
+    vue "^3.1.1"
+    vue-router "^4.0.8"
 
-element-plus@^1.0.2-beta.44, element-plus@^1.0.2-beta.47:
+element-plus@^1.0.2-beta.44:
   version "1.0.2-beta.47"
   resolved "https://registry.npmjs.org/element-plus/-/element-plus-1.0.2-beta.47.tgz"
   integrity sha512-nSWa3rwDvj4Xxs407A3fyx8t64WeZlV+XphWMENGbeyBO/ltkA6q7h2BjWUL/KEu70x1OSGRsEdvsR1a0UYJ2A==
+  dependencies:
+    "@popperjs/core" "^2.4.4"
+    "@types/lodash" "^4.14.161"
+    async-validator "^3.4.0"
+    dayjs "1.x"
+    lodash "^4.17.20"
+    mitt "^2.1.0"
+    normalize-wheel "^1.0.1"
+    resize-observer-polyfill "^1.5.1"
+
+element-plus@^1.0.2-beta.48:
+  version "1.0.2-beta.48"
+  resolved "https://registry.nlark.com/element-plus/download/element-plus-1.0.2-beta.48.tgz#8da99decd397b9975cd894d389096d2ed58c699e"
+  integrity sha1-jamd7NOXuZdc2JTTiQltLtWMaZ4=
   dependencies:
     "@popperjs/core" "^2.4.4"
     "@types/lodash" "^4.14.161"
@@ -680,12 +699,19 @@ vite@^2.3.3:
   optionalDependencies:
     fsevents "~2.3.1"
 
-vue-router@^4.0.0-rc.6, vue-router@^4.0.6:
+vue-router@^4.0.0-rc.6:
   version "4.0.8"
   resolved "https://registry.npmjs.org/vue-router/-/vue-router-4.0.8.tgz"
   integrity sha512-42mWSQaH7CCBQDspQTHv63f34VEnZC20g9QNK4WJ/zW8SdIUeT6TQ2i/78fjF/pVBUPLBWrGhvB7uDnaz7O/pA==
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.10"
+
+vue-router@^4.0.8:
+  version "4.0.9"
+  resolved "https://registry.nlark.com/vue-router/download/vue-router-4.0.9.tgz#248496941b79c4c1010f6ebfcf235cd4267d85da"
+  integrity sha1-JISWlBt5xMEBD26/zyNc1CZ9hdo=
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.14"
 
 vue-tsc@^0.0.24:
   version "0.0.24"
@@ -694,10 +720,10 @@ vue-tsc@^0.0.24:
   dependencies:
     unzipper "0.10.11"
 
-vue@^3.0.11:
+vue@^3.0.11, vue@^3.1.1:
   version "3.1.1"
-  resolved "https://registry.npmjs.org/vue/-/vue-3.1.1.tgz"
-  integrity sha512-j9fj3PNPMxo2eqOKYjMuss9XBS8ZtmczLY3kPvjcp9d3DbhyNqLYbaMQH18+1pDIzzVvQCQBvIf774LsjjqSKA==
+  resolved "https://registry.nlark.com/vue/download/vue-3.1.1.tgz?cache=0&sync_timestamp=1623100725920&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue%2Fdownload%2Fvue-3.1.1.tgz#9ad655758a0fa6c0dee5b3d2431d3912a9b381aa"
+  integrity sha1-mtZVdYoPpsDe5bPSQx05Eqmzgao=
   dependencies:
     "@vue/compiler-dom" "3.1.1"
     "@vue/runtime-dom" "3.1.1"
