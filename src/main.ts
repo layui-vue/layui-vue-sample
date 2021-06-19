@@ -7,4 +7,8 @@ import 'element-plus/lib/theme-chalk/index.css'
 import App from './App.vue'
 import Router from './router'
 
-createApp(App).use(ElementEnhance).use(ElementPlus).use(Router).mount('#app')
+createApp(App)
+.use(ElementEnhance)
+.use(ElementPlus)
+.use(Router)
+.mount('#app')

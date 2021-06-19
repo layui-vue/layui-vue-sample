@@ -39,6 +39,11 @@ export default [
         component: () => import('../../views/Error/500.vue'),
         meta: { title: '500' },
       },
+      {
+        path: '/502',
+        component: () => import('../../views/Error/502.vue'),
+        meta: { title: '502' },
+      },
     ]
   }
 ]
