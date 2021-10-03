@@ -3,8 +3,8 @@
   <lay-header>
     <lay-logo></lay-logo>
   </lay-header>
-  <lay-side>
-    <lay-menu>
+  <lay-side black>
+    <lay-menu tree>
       <lay-menu-item title="控制台"></lay-menu-item>
       <lay-menu-item title="分析页"></lay-menu-item>
     </lay-menu>
