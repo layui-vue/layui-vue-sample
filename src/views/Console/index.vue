@@ -1,9 +1,6 @@
 <template>
   <div>
-    <lay-button-container>
-      <lay-button>默认按钮</lay-button>
-      <lay-button>重要按钮</lay-button>
-    </lay-button-container>
+     控制台
   </div>
 </template>
 <script lang="ts">
