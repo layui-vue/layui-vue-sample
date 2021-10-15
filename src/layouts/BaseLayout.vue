@@ -3,15 +3,19 @@
     <lay-header>
       <lay-logo class="layui-bg-black">Layui - Sample</lay-logo>
     </lay-header>
-    <lay-side black>
-      <lay-menu selectedKey="5" tree>
-        <lay-menu-item title="首页" id="1"></lay-menu-item>
-        <lay-menu-item title="用户" id="2"></lay-menu-item>
-        <lay-menu-item title="角色" id="3"></lay-menu-item>
-        <lay-menu-item title="目录">
-          <lay-menu-child-item title="菜单一" id="4"></lay-menu-child-item>
-          <lay-menu-child-item title="菜单二" id="5"></lay-menu-child-item>
-          <lay-menu-child-item title="菜单三" id="6"></lay-menu-child-item>
+    <lay-side :black="isBlack">
+      <lay-menu selectedKey="1" :tree="isTree">
+        <lay-menu-item title="工作空间" id="0">
+          <lay-menu-child-item id="1">
+            <template v-slot:title>
+              <router-link to="/console">控制台</router-link>
+            </template>
+          </lay-menu-child-item>
+          <lay-menu-child-item id="2">
+            <template v-slot:title>
+              <router-link to="/analysis">分析页</router-link>
+            </template>
+          </lay-menu-child-item>
         </lay-menu-item>
       </lay-menu>
     </lay-side>
@@ -23,3 +27,16 @@
     <lay-footer></lay-footer>
   </lay-layout>
 </template>
+<script>
+import { ref } from "vue";
+export default {
+  setup() {
+    const isTree = ref(true);
+    const isBlack = ref(true);
+    return {
+      isTree,
+      isBlack,
+    };
+  },
+};
+</script>
