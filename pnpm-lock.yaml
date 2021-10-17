@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@layui/layui-vue': ^0.1.3
+  '@layui/layui-vue': ^0.1.4
   '@vitejs/plugin-vue': ^1.9.3
   '@vue/compiler-sfc': ^3.2.20
   typescript: ^4.4.3
@@ -11,7 +11,7 @@ specifiers:
   vue-tsc: ^0.0.24
 
 dependencies:
-  '@layui/layui-vue': 0.1.3
+  '@layui/layui-vue': 0.1.4
   vue: 3.2.20
   vue-router: 4.0.11_vue@3.2.20
 
@@ -29,8 +29,8 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  /@layui/layui-vue/0.1.3:
-    resolution: {integrity: sha512-nfVoD+qpKqQH4YbBnwFAQ0rdLO+xMHl83qZ5MmVkxYfnUq7HhjjiSDtwtuASwqmeQ1nppvoGbGxAwHQB3BSWdQ==}
+  /@layui/layui-vue/0.1.4:
+    resolution: {integrity: sha512-BHlMr2k112HzVsjyl3JhjCSNqvyrqJeBVg2X/aC6H6P8+0xMT9RCaUFclW9RhnYfWo2U1dXivXNLSpofKASdOQ==}
     dependencies:
       vue: 3.2.20
       vue-router: 4.0.11_vue@3.2.20
