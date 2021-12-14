@@ -18,6 +18,7 @@
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
+  <lay-button>欢迎使用</lay-button>
 </template>
 
 <script setup>
