@@ -1,10 +1,9 @@
-<script lang="ts" setup>
-// @ts-ignore
+<script setup>
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <HelloWorld msg="layui-vue-sample" />
+  <HelloWorld msg="hooks - vue" />
 </template>
 
 <style>

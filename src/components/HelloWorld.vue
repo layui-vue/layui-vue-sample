@@ -2,9 +2,9 @@
   <h1>{{ msg }}</h1>
   <p>
     Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">vue</a>
+    <a href="https://code.visualstudio.com/" target="_blank">hooks</a>
     +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">hooks</a>
+    <a href="https://github.com/johnsoncodehk/volar" target="_blank">vue</a>
   </p>
 
   <p>
