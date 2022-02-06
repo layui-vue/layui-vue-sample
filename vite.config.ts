@@ -6,5 +6,12 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     port: 3333
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true
+      }
+    }
   }
 })
