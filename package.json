@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@layui/layui-vue": "^1.4.4",
+    "@layui/layui-vue": "^1.4.14",
     "vue": "^3.2.29",
     "vue-router": "^4.0.12"
   },
