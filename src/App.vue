@@ -1,73 +1,7 @@
 <template>
-  <lay-table :columns="columns" id="id" :dataSource="dataSource" v-model:selectedKeys="selectedKeys"  :checkbox="checkbox" :default-toolbar="defaultToolbar" @row="rowClick">
-    <template v-slot:toolbar>
-      <lay-button size="sm">新增</lay-button>
-      <lay-button size="sm">删除</lay-button>
-    </template>
-    <template v-slot:username="{ data }"> {{data.username}} </template>
-    <template v-slot:password="{ data }"> {{data.password}} </template>
-    <template v-slot:operator="{  }">
-      <lay-button >修改</lay-button>
-      <lay-button type="primary">删除</lay-button>
-    </template>
-  </lay-table>
+  <HelloWorld></HelloWorld>
 </template>
 
-<script>
-import { ref } from 'vue'
-
-export default {
-  setup() {
-
-    const selectedKeys = ref(['1'])
-    const checkbox = ref(true)
-    const defaultToolbar = ref(true)
-
-    const columns = [
-      {
-        title:"账户",
-        width:"200px",
-        customSlot:"username",
-        key:"username"
-      },{
-        title:"密码",
-        width: "180px",
-        customSlot:"password",
-        key:"password"
-      },{
-        title:"年龄",
-        width: "180px",
-        key:"age"
-      },{
-        title:"操作",
-        width: "180px",
-        customSlot:"operator",
-        key:"operator"
-      }
-    ]
-
-    const dataSource = [
-      {id:"1", username:"root", password:"root", age:"18"},
-      {id:"2", username:"woow", password:"woow", age:"20"}
-    ]
-
-    const rowClick = function(data) {
-      console.log(JSON.stringify(data))
-    }
-    
-    const rowDoubleClick = function(data) {
-      console.log(JSON.stringify(data))
-    }
-
-    return {
-      columns,
-      dataSource,
-      selectedKeys,
-      checkbox,
-      defaultToolbar,
-      rowClick,
-      rowDoubleClick
-    }
-  }
-}
+<script lang="ts" setup>
+import HelloWorld from "./components/HelloWorld.vue"
 </script>
